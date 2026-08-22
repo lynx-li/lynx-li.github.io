@@ -1,0 +1,709 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.jpg">
+  <link rel="icon" href="/img/avatar.jpg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Lynx Li">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="The Beginning of Everything Today marks exactly one year since I became an amateur AI researcher. I still remember how disheartened I was with my circumstances back then. I was originally supposed to">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI Research--A Year of Ramblings​">
+<meta property="og:url" content="https://lynx-li.github.io/2025/05/12/life/aireserach_ayear/index.html">
+<meta property="og:site_name" content="Lynx Li">
+<meta property="og:description" content="The Beginning of Everything Today marks exactly one year since I became an amateur AI researcher. I still remember how disheartened I was with my circumstances back then. I was originally supposed to">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-05-12T13:17:53.971Z">
+<meta property="article:modified_time" content="2025-11-23T10:42:29.164Z">
+<meta property="article:author" content="Lynx Li">
+<meta property="article:tag" content="AI researcher">
+<meta property="article:tag" content="Emotional">
+<meta property="article:tag" content="Independent Researcher">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>AI Research--A Year of Ramblings​ - Lynx Li</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"lynx-li.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Lynx Li Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="AI Research--A Year of Ramblings​"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Lynx Li
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-12 21:17" pubdate>
+          May 12, 2025 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          205 words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          2 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">AI Research--A Year of Ramblings​</h1>
+            
+              <p id="updated-time" class="note note-info" style="">
+                
+                  
+                    Last updated on November 23, 2025 pm
+                  
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="The-Beginning-of-Everything">The Beginning of Everything</h3>
+<p>Today marks exactly one year since I became an amateur AI researcher. I still remember how disheartened I was with my circumstances back then. I was originally supposed to become an antenna engineer, but due to certain reasons, I was forced to work on things I had no interest in—things completely unrelated to antennas or even my undergraduate studies.</p>
+<p>During that time, I was extremely anxious. Every morning, I’d wake up wondering: <em>What should I do with my future? What if I can’t understand a single word of the research topic I’m assigned? What if this field has no commercial prospects? How will I find a job?</em> But gradually, my anxiety turned into defiance. <em>Am I really going to let myself rot here?</em></p>
+<p>The year I graduated, two things left a deep impression on me:</p>
+<ol>
+<li>​<strong>Segment Anything</strong>—the first model capable of segmenting any object, demonstrating a general understanding of objects.</li>
+<li>​<strong>ChatGPT</strong>—people were using it for all sorts of fun things, like casting “magic spells” in Python, role-playing, or even mimicking a Linux terminal.</li>
+</ol>
+<p>After finishing my postgraduate entrance exams, I started studying deep learning. But due to inertia from my initial learning, I kept focusing on computer vision (CV). Then, a bold idea struck me: <em>What if I just do AI research on my own?</em></p>
+<h3 id="Starting-with-a-Server-on-My-Desk">Starting with a Server on My Desk</h3>
+<p>The first step in research is having your own computing power. Renting cloud machines long-term was too expensive, so I decided to build my own. I emptied my savings—scholarships, competition prizes—and even had to ask my parents for extra money to assemble a ​<strong>4x RTX 3090 server</strong>.</p>
+<p>At first, I kept it at my university since our research group needed simulation resources. I thought, <em>“The CPU has plenty of cores, so everyone can share it.”</em> But the campus network became the biggest obstacle—constantly changing IPs, unstable speeds, SSH disconnections, and no way to expose it to the public internet. The IT department ignored my requests. Eventually, I had no choice but to move the server back home.</p>
+<p>Chongqing summers are scorching. To prevent overheating, I locked each GPU’s power limit to ​<strong>250W</strong>. That server, sitting on my desk, accompanied me for an entire year.</p>
+<h3 id="Choosing-a-Research-Direction">Choosing a Research Direction</h3>
+<p>By mid-March, I was still planning to work on CV. But by chance, someone asked if I wanted to collaborate on ​<strong>large language models (LLMs)​</strong>. I figured that ​<strong>AIGC (AI-generated content)​</strong>​ was the hottest field, with higher commercial potential, so I began a long collaboration with my co-authors.</p>
+<h3 id="The-Journey-into-LLMs">The Journey into LLMs</h3>
+<p>In May, we decided to submit to ​<strong>ICLR</strong>. I started with ​<strong>Andrej Karpathy’s LLM introductory course</strong>, then branched into multiple areas:</p>
+<ul>
+<li>GPT architecture</li>
+<li>The three stages of training</li>
+<li>Parameter-efficient fine-tuning (PEFT)</li>
+<li>Infrastructure frameworks</li>
+<li>Multimodal models</li>
+</ul>
+<p>Every day was a deep dive into papers and code implementations. My biggest regret was not learning infrastructure (Infra) properly—things like ​<strong>CUDA programming</strong>​ or ​<strong>Triton</strong>. Now, I only understand the principles of parallelism and acceleration kernels but can’t implement them myself.</p>
+<p>The most painful part? ​<strong>Reading code.​</strong>​ Big tech companies (especially Meta) write elegant, educational code, but digesting it all was exhausting. Meanwhile, some academic open-source projects were pure torture.</p>
+<p>During that period, my favorite escape was walking along the beach while listening to music. To this day, ​<strong>Brahms’ Piano Concerto No. 1</strong>​ and ​<strong>Chopin’s Piano Concerto No. 1</strong>​ instantly bring back memories of those study sessions.</p>
+<h3 id="Failure-Then-More-Failure">Failure, Then More Failure</h3>
+<p>Of course, not everything went smoothly. Our ICLR submission failed—we didn’t even finish the paper. We pivoted and aimed for ​<strong>ICML</strong>, but the submission deadline was during ​<strong>Chinese New Year</strong>. While my whole family gathered, I locked myself in my room, running experiments and writing. I barely spent any time with them.</p>
+<p>After submission, the ​<strong>rebuttal phase</strong>​ brought even more issues. Judging by the final scores, it was probably a lost cause.</p>
+<p>It’s impossible not to feel demoralized. Right now, I’m juggling failed projects, new projects, and even ​<strong>speed-running quantum mechanics</strong>​ just to graduate. The anxiety keeps waking me up at night, leaving me unable to fall back asleep—it’s taking a toll on my health.</p>
+<p>Once, I woke up at ​<strong>4 AM</strong>, gave up on sleep, and decided to take a walk to the beach. That’s when I realized how early the sun rises in Qingdao. As a longtime urban photographer, I’ve always noted sunrise and sunset times. I observed the changing light, only to find my usual path to the shore ​<strong>blocked by construction barriers</strong>.</p>
+<p>I truly envy those who have the ​<strong>ability</strong>—both financially and skill-wise—to pursue their dreams. I’m still far from where I need to be.</p>
+<p>All this rambling just proves one thing: ​<strong>I’m not strong enough yet.​</strong>​ The only way forward is to keep improving. If I were stronger, maybe I’d have fewer worries.</p>
+<h3 id="Future-Hopes">Future Hopes</h3>
+<p>Right now, I’m too busy, but someday I want to work on an ​<strong>AI companion</strong>—a true digital human.</p>
+<ul>
+<li>​<strong>LLM + humanoid robotics</strong>​</li>
+<li>Capable of human-like movements and facial expressions</li>
+<li>Long-term memory that adapts to user interactions (even embedding memories into model weights)</li>
+<li>Customizable personalities</li>
+</ul>
+<p>Maybe one day, I’ll be working on something like that.</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Life-Moments/" class="category-chain-item">Life Moments</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Emotional/" class="print-no-link">#Emotional</a>
+      
+        <a href="/tags/AI-researcher/" class="print-no-link">#AI researcher</a>
+      
+        <a href="/tags/Independent-Researcher/" class="print-no-link">#Independent Researcher</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>AI Research--A Year of Ramblings​</div>
+      <div>https://lynx-li.github.io/2025/05/12/life/aireserach_ayear/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Lynx Li</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>May 12, 2025</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/06/09/visual_gen/flow_match/01_beginning/" title="01-Overview of Flow Matching">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">01-Overview of Flow Matching</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/05/12/research/differentiable_reorder/" title="Differentiable Permutation Layer">
+                        <span class="hidden-mobile">Differentiable Permutation Layer</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
